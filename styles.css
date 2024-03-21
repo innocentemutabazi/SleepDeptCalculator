@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f5f5dc 0%, #e5dcbf 100%); /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    height: 60%;
+    width: 350px;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 0.5s ease;
+}
+
+h1 {
+    margin-bottom: 30px;
+    color: #444;
+    font-weight: 600;
+}
+
+#sleep-data {
+    margin-bottom: 30px;
+}
+
+.sleep-hours {
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.sleep-hours:focus {
+    border-color: #ff6f61; /* Coral focus color */
+}
+
+#calculate-button {
+    padding: 12px 30px;
+    font-size: 16px;
+    background-color: #ff6f61; /* Coral button color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#calculate-button:hover {
+    background-color: #ff4f40; /* Darker coral hover color */
+}
+
+#result {
+    margin-top: 20px;
+    color: #666;
+    font-size: 16px;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
